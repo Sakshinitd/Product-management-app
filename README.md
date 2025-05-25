@@ -1,3 +1,30 @@
+# Product Management App
+
+A web application for managing products, built using Vite and [Your Framework Here, e.g., React].
+
+---
+
+## Live Demo
+
+ [View on GitHub Pages](https://sakshinitd.github.io/Product-management-app/)
+
+## GitHub Repository
+
+ [github.com/Sakshinitd/Product-management-app](https://github.com/Sakshinitd/Product-management-app)
+
+---
+
+## Getting Started
+
+Clone and run locally:
+
+```bash
+git clone https://github.com/Sakshinitd/Product-management-app.git
+cd Product-management-app
+npm install
+npm run dev
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
