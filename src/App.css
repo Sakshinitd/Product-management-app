@@ -1,0 +1,249 @@
+:root {
+  --primary-orange: #ff6b00;
+  --dark-orange: #cc5500;
+  --black: #1a1a1a;
+  --dark-gray: #2d2d2d;
+  --light-gray: #3d3d3d;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: var(--primary-orange);
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  border: 1px solid var(--light-gray);
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--dark-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid var(--light-gray);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+tr:hover {
+  background-color: var(--dark-orange);
+  transition: background-color 0.3s ease;
+}
+
+select {
+  padding: 10px 15px;
+  border: 2px solid var(--primary-orange);
+  border-radius: 6px;
+  margin-right: 10px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: var(--dark-orange);
+  background-color: var(--light-gray);
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+}
+
+button {
+  padding: 8px 16px;
+  background-color: var(--primary-orange);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--dark-orange);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 8px 12px;
+  border: 2px solid var(--primary-orange);
+  border-radius: 6px;
+  margin-right: 4px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--dark-orange);
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Filter section styling */
+.filter-section {
+  background-color: var(--dark-gray);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container */
+.table-container {
+  background-color: var(--dark-gray);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Deleted Items Section */
+.deleted-items-section {
+  background-color: var(--dark-gray);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deleted-items-section h2 {
+  color: var(--primary-orange);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.deleted-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deleted-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.deleted-item:hover {
+  background-color: var(--dark-orange);
+}
+
+.deleted-item span {
+  color: var(--white);
+}
+
+.item-details {
+  color: #ccc !important;
+  font-size: 0.9rem;
+}
+
+.deleted-item button {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleted-item button:hover {
+  background-color: var(--dark-orange);
+  transform: translateY(-1px);
+}
