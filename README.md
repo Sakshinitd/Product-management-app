@@ -1,39 +1,47 @@
 # Product Management App
 
-A web application for managing products, built using Vite and [Your Framework Here, e.g., React].
+A sleek and intuitive web app for managing products – add, edit, delete, search, and categorize with ease. Built with [Your Tech Stack] and aimed at helping small teams and solo developers plan and track their product catalog.
 
----
+## Features
 
-## Live Demo
+- **Product CRUD**: Create, Read, Update, and Delete product entries
+- **Search & Filter**: Quickly find products by name, category, or SKU
+- **Categorization**: Organize products into groups
+- **Responsive UI**: Works seamlessly across mobile, tablet, and desktop
+- **Validation & Alerts**: Ensures data integrity and provides user notifications
+- **Persistence**: Saves data via [LocalStorage/API/Database]
 
- [View on GitHub Pages](https://sakshinitd.github.io/Product-management-app/)
+## Tech Stack
 
-## GitHub Repository
+- **Frontend**: [e.g. React, HTML,CSS,JavaScript]
+- **Backend**: [e.g. Node.js]
+- **Styling/UI**: [e.g. Tailwind CSS, Bootstrap]
 
- [github.com/Sakshinitd/Product-management-app](https://github.com/Sakshinitd/Product-management-app)
+## Prerequisites
 
----
+Ensure you have installed:
+
+- Node.js v14+  
+- NPM or Yarn  
+- [Optional] Docker (if containerized)
 
 ## Getting Started
 
-Clone and run locally:
-
 ```bash
+# Clone the repo
 git clone https://github.com/Sakshinitd/Product-management-app.git
 cd Product-management-app
+
+# Install dependencies
 npm install
+
+# Set up environment variables (example .env file)
+cp .env.example .env
+
+# Start in development mode
 npm run dev
+# or, if using a backend:
+cd server && npm install && npm run dev
 
 
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
